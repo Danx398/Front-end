@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-5 mt-2">Tabla Hardware</h2>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Nombre</td>
+                            <td>Marca</td>
+                            <td>Modelo</td>
+                            <td>Memoria</td>
+                            <td>Procesador</td>
+                            <td>Disco Duro</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let items of listado">
+                            <td>{{items.id}}</td>
+                            <td>{{items.nombre}}</td>
+                            <td>{{items.marca}}</td>
+                            <td>{{items.modelo}}</td>
+                            <td>{{items.memoria}}</td>
+                            <td>{{items.procesador}}</td>
+                            <td>{{items.disco_duro}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div *ngIf="edad>=18;else mensaje">
+                    <p class="text-center">Eres mayor de edad : VERDADERO</p>
+                </div>
+                <ng-template #mensaje>
+                    <p class="text-center">Eres menor de edad: FALSO</p>
+                </ng-template>
+            </div>
+        </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
