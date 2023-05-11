@@ -1,0 +1,8 @@
+<form action="" (ngSubmit)="enviarInformacion()">
+    <label for="">id</label>
+    <!-- ngModel == es una propiedad que espera un evento por los [] y () -->
+    <input type="text" class="form-control" id="" [(ngModel)]="heroe.id" name="id">
+    <label for="">Nombre</label>
+    <input type="text" class="form-control" id="" [(ngModel)]="heroe.nombre" name="nombre">
+    <button class="btn btn-primary mt-3">Agregar</button>
+</form>

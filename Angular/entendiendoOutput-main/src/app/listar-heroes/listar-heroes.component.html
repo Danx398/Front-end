@@ -1,0 +1,15 @@
+<h2>Listado de heroes</h2>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of heroesListadoTotal">
+            <td>{{ item.id }}</td>
+            <td>{{ item.nombre }}</td>
+        </tr>
+    </tbody>
+</table>
