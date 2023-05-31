@@ -1,0 +1,27 @@
+<div class="" *ngIf="verdad;else falso">
+    <h1>Hello world</h1>
+</div>
+<ng-template #falso>
+    <h1>Soy falso</h1>
+</ng-template>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <table class="table">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>RFC</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let varAyuda of persona">
+                        <td>{{varAyuda.id}}</td>
+                        <td>{{varAyuda.nombre}}</td>
+                        <td>{{varAyuda.rfc}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
